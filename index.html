@@ -41,7 +41,15 @@
             margin: 20px 0;
         }
     </style>
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17066112873"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17066112873'); </script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "01b150be-64d5-4a07-ac57-297bfc801c9e",
+    });
+  });
+</script>
 </head>
 <body>
     <h1>Robinhood's Professional Gardening & Landscaping Service</h1>
